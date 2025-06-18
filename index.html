@@ -29,26 +29,26 @@
   </defs>
 
   <g filter="url(#shadow)">
-    <!-- Ice Cream Colors (drawn first, to be under the outline) -->
-    <!-- Red part -->
-    <path d="M 40.5,180.5 C 35,120 50,45 100,30 C 90,80 80,130 80,180.5 Z" fill="#E53935"/>
-    <!-- Yellow part -->
-    <path d="M 80,180.5 C 80,130 90,80 100,30 C 110,80 120,130 115,180.5 Z" fill="#FDD835"/>
-    <!-- Green part -->
-    <path d="M 115,180.5 C 120,130 125,90 135,70 C 130,110 130,150 140,180.5 Z" fill="#7CB342"/>
-    <!-- Blue part -->
-    <path d="M 140,180.5 C 150,150 155,110 135,70 C 165,80 175,140 159.5,180.5 Z" fill="#1E88E5"/>
-
     <!-- Cone -->
-    <path d="M 40,180 L 160,180 L 100,280 Z" fill="#F9A825" stroke="#333" stroke-width="5" stroke-linejoin="round" />
+    <path d="M 30 170 L 170 170 L 100 290 Z" fill="#F9A825"/>
     
-    <!-- Ice Cream Outline -->
-    <path d="M 40.5,180.5 C 35,120 50,45 100,30 C 165,80 175,140 159.5,180.5" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Ice Cream Fills -->
+    <path d="M 30,170 C 20,120, 40,50, 100,30 C 95,80, 85,130, 80,170 Z" fill="#E53935"/>
+    <path d="M 80,170 C 85,130, 95,80, 100,30 C 110,70, 120,120, 125,170 Z" fill="#FDD835"/>
+    <path d="M 125,170 C 120,120, 110,70, 100,30 C 130,60, 145,110, 145,170 Z" fill="#7CB342"/>
+    <path d="M 145,170 C 145,110, 130,60, 100,30 C 180,50, 190,130, 170,170 Z" fill="#1E88E5"/>
 
-    <!-- Internal lines of the ice cream -->
-    <path d="M 80,180.5 C 80,130 90,80 100,30" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M 115,180.5 C 120,130 125,90 135,70" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M 140,180.5 C 150,150 155,110 135,70" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Outlines -->
+    <g fill="none" stroke="#333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Cone Outline -->
+        <path d="M 30 170 L 100 290 L 170 170"/>
+        <!-- Ice Cream Outline -->
+        <path d="M 30,170 C 20,120, 40,50, 100,30 C 180,50, 190,130, 170,170"/>
+        <!-- Swirl lines -->
+        <path d="M 80,170 C 85,130, 95,80, 100,30"/>
+        <path d="M 125,170 C 120,120, 110,70, 100,30"/>
+        <path d="M 145,170 C 140,120, 130,70, 100,30"/>
+    </g>
   </g>
 </svg>
 
