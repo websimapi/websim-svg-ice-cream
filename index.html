@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Ice Cream</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        svg {
+            width: 250px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<svg viewBox="0 0 200 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Cone Gradient -->
+    <linearGradient id="coneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFC989" />
+      <stop offset="100%" style="stop-color:#F98C3D" />
+    </linearGradient>
+    
+    <!-- Ice Cream Gradients -->
+    <linearGradient id="redGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D4D"/>
+      <stop offset="100%" stop-color="#D92B2B"/>
+    </linearGradient>
+
+    <linearGradient id="yellowGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFEE58"/>
+      <stop offset="100%" stop-color="#FDD835"/>
+    </linearGradient>
+
+    <linearGradient id="orangeGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFA726"/>
+      <stop offset="100%" stop-color="#FB8C00"/>
+    </linearGradient>
+
+    <linearGradient id="greenGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#9CCC65"/>
+      <stop offset="100%" stop-color="#689F38"/>
+    </linearGradient>
+
+    <linearGradient id="blueGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#42A5F5"/>
+      <stop offset="100%" stop-color="#1E88E5"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7E57C2"/>
+      <stop offset="100%" stop-color="#5E35B1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cone -->
+  <path d="M 75 220 L 125 220 L 100 310 Z" fill="url(#coneGradient)" />
+
+  <!-- Ice Cream Swirls (bottom to top) -->
+  
+  <!-- Purple Swirl -->
+  <path d="M 72 225 C 70 200, 130 200, 128 225 C 130 250, 70 250, 72 225 Z" fill="url(#purpleGradient)"/>
+  
+  <!-- Blue Swirl -->
+  <path d="M 70 205 C 65 180, 135 180, 130 205 C 135 230, 65 230, 70 205 Z" fill="url(#blueGradient)"/>
+  
+  <!-- Green Swirl -->
+  <path d="M 70 185 C 60 160, 140 160, 130 185 C 140 210, 60 210, 70 185 Z" fill="url(#greenGradient)"/>
+
+  <!-- Orange Swirl -->
+  <path d="M 82 170 C 75 150, 125 150, 118 170 C 125 185, 75 185, 82 170 Z" fill="url(#orangeGradient)"/>
+
+  <!-- Yellow Swirl -->
+  <path d="M 90 155 C 85 140, 115 140, 110 155 C 115 165, 85 165, 90 155 Z" fill="url(#yellowGradient)"/>
+
+  <!-- Red Flame -->
+  <path d="M 100 70 C 80 120, 80 130, 95 145 C 90 148, 110 148, 105 145 C 120 130, 120 120, 100 70 Z" fill="url(#redGradient)"/>
+</svg>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
